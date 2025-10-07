@@ -1,14 +1,16 @@
 extends Control
-const MAIN_SCENE := "res://level/game.tscn" 
 
 @onready var play_btn := $CenterContainer/VBoxContainer/PlayAgainButton
 @onready var quit_btn := $CenterContainer/VBoxContainer/QuitButton
 
 func _ready() -> void:
-    # เชื่อมปุ่มกับฟังก์ชัน
-    play_btn.pressed.connect(_on_play_pressed)
+	# 1. บังคับแสดงเมาส์
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE 
+	
+	get_tree().paused = false 
+
+const GAME_SCENE_PATH = "res://menu/start_menu.tscn"
 
 
-func _on_play_pressed() -> void:
-    # กลับไปเริ่มเกมใหม่
-    get_tree().change_scene_to_file(MAIN_SCENE)
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://menu/start_menu.tscn")

@@ -12,6 +12,7 @@ func increase_score():
 
 func _on_kill_plane_body_entered(body):
 	get_tree().reload_current_scene.call_deferred()
+	get_tree().change_scene_to_file("res://GameOver.tscn")
 
 
 func _on_mob_spawner_3d_mob_spawned(mob):
