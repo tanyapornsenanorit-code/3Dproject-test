@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dm1rvyd38xs0q"]
+[gd_scene load_steps=3 format=3 uid="uid://dm1rvyd38xs0q"]
 
 [ext_resource type="Script" uid="uid://rr8bfb4h08kp" path="res://GameOver.gd" id="1_40baj"]
+[ext_resource type="FontFile" uid="uid://baah6s0t372bb" path="res://asset/BoldPixels.ttf" id="2_a1htc"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -21,11 +22,13 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_a1htc")
 theme_override_font_sizes/font_size = 140
 text = "GAME OVER"
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_a1htc")
 theme_override_font_sizes/font_size = 90
 text = "Play Again"
 
