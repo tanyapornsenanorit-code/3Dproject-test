@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://courndspfmq8n"
-path="res://.godot/imported/reticle.png-94d8174638f634e8c9dc538a8a25a59b.ctex"
+uid="uid://dxj4a4wvflmns"
+path="res://.godot/imported/ปกเกม.png-a407ed218c6041fb1f477697162ad7f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/reticle.png"
-dest_files=["res://.godot/imported/reticle.png-94d8174638f634e8c9dc538a8a25a59b.ctex"]
+source_file="res://asset/ปกเกม.png"
+dest_files=["res://.godot/imported/ปกเกม.png-a407ed218c6041fb1f477697162ad7f0.ctex"]
 
 [params]
 
