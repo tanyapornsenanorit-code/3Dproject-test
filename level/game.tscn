@@ -1,7 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://bpqvmc7qt8xut"]
+[gd_scene load_steps=18 format=3 uid="uid://bpqvmc7qt8xut"]
 
 [ext_resource type="Script" uid="uid://bl4rvfo6g3wbf" path="res://lessons_reference/video_16/game.gd" id="1_8jqrf"]
-[ext_resource type="Script" uid="uid://blv4x53dgakqt" path="res://level/gui.gd" id="2_bg2yq"]
 [ext_resource type="PackedScene" uid="uid://d3kp34dihjeyd" path="res://lessons_reference/video_16/player/player.tscn" id="2_xkvjb"]
 [ext_resource type="PackedScene" uid="uid://xtl5acmpaa04" path="res://lessons_reference/video_16/mob/spawner_3d.tscn" id="3_famlx"]
 [ext_resource type="PackedScene" uid="uid://dfwbq2vombjvr" path="res://lessons_reference/video_16/mob/mob.tscn" id="4_fxr6r"]
@@ -56,21 +55,7 @@ transform = Transform3D(0.707107, -0.612373, 0.353553, 0, 0.5, 0.866026, -0.7071
 shadow_enabled = true
 directional_shadow_max_distance = 40.0
 
-[node name="GUI" type="Node3D" parent="."]
-script = ExtResource("2_bg2yq")
-
-[node name="LabelTime" type="Label" parent="GUI"]
-offset_left = 302.0
-offset_top = 2.0
-offset_right = 528.0
-offset_bottom = 109.0
-
-[node name="Timer" type="Timer" parent="GUI/LabelTime"]
-wait_time = 60.0
-one_shot = true
-autostart = true
-
-[node name="Label" type="Label" parent="GUI"]
+[node name="Label" type="Label" parent="."]
 unique_name_in_owner = true
 offset_left = 28.0
 offset_top = 15.0
