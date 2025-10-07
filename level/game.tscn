@@ -85,7 +85,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.7262, -0.264387, 8.2611)
 mob_to_spawn = ExtResource("4_fxr6r")
 
 [node name="MobSpawner3D3" parent="." instance=ExtResource("3_famlx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.491, -0.5, -8.5851)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3056, 0.0341065, -8.54925)
 mob_to_spawn = ExtResource("4_fxr6r")
 
 [node name="world" type="Node3D" parent="."]
